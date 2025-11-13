@@ -134,18 +134,28 @@ export default function ContactForm() {
 
         {/* Phone */}
         <div>
-          <label className="block mb-2 text-white text-sm">Phone Number</label>
+          <label className="block mb-2 text-white text-sm">Phone Number *</label>
           <input
             name="phone"
             type="tel"
+            required
+            minLength={7}
+            maxLength={15}
+            pattern="[0-9]{7,15}"
+            onInput={(e) => {
+              // Allow only digits
+              e.currentTarget.value = e.currentTarget.value.replace(/\D/g, "");
+            }}
             className="
-              w-full p-3 bg-white/5
-              border border-white/10 rounded-lg text-white
-              focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan/40
-              transition
+              w-full p-3 bg-white/5 border border-white/10 rounded-lg text-white
+              focus:border-neon-cyan focus:ring-1 focus:ring-neon-cyan/40 transition
             "
           />
+          <p className="text-xs text-gray-400 mt-1">
+            Enter a valid phone number (digits only, 7–15 digits)
+          </p>
         </div>
+
 
         {/* Service Dropdown */}
         <div>
