@@ -15,12 +15,14 @@ const options = [
 
 export default function CustomSelect({ value, onChange }: any) {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef(null);
+//   const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
 
   // Close dropdown when clicked outside
   useEffect(() => {
-    function handleClickOutside(e: any) {
-      if (containerRef.current && !containerRef.current.contains(e.target)) {
+    function handleClickOutside(e: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setOpen(false);
       }
     }
