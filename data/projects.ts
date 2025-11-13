@@ -181,5 +181,5 @@ export const getProjectsByCategory = (service: string, category: string) => {
 
 export const getCategories = (service: string): string[] => {
   const serviceProjects = getProjectsByService(service);
-  return [...new Set(serviceProjects.map(p => p.category))];
+  return Array.from(new Set(serviceProjects.map(p => p.category)));
 };
