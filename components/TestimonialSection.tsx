@@ -49,7 +49,7 @@ export default function TestimonialSection() {
   const current = testimonials[index];
 
   return (
-    <section className="py-24 px-6 bg-secondary/40 backdrop-blur-xl relative overflow-hidden">
+    <section className="py-24 px-6 bg-secondary/40 backdrop-blur-xl relative overflow-hidden" id="testimonials">
       {/* Glow backdrop */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(0,240,255,0.15),transparent_70%)]"></div>
 

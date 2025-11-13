@@ -5,6 +5,9 @@ import ContactForm from '@/components/ContactForm'
 import { projects } from '@/data/projects'
 import type { Metadata } from 'next'
 import TestimonialSection from "@/components/TestimonialSection";
+import BackToTopButton from "@/components/BackToTopButton";
+
+
 
 export const metadata: Metadata = {
   title: 'SiyaTechPlus | Ultimate Digital Solutions',
@@ -28,6 +31,7 @@ export default function Home() {
       <PortfolioPreview projectsByService={projectsByService} />
       <TestimonialSection />
       <ContactForm />
+       <BackToTopButton />
       
       
     </div>
