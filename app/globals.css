@@ -1,0 +1,198 @@
+/* --------------------------------------------------
+   Tailwind Base Layers
+-------------------------------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------------------------
+   Design Tokens (Synced with tailwind.config.js)
+-------------------------------------------------- */
+
+:root {
+  /* Brand Colors */
+  --primary: #0B0F1A;
+  --secondary: #111628;
+  --neon-cyan: #00F0FF;
+  --neon-purple: #B026FF;
+
+  /* Text Colors */
+  --text-light: #E0E6ED;
+  --text-muted: #8B92A8;
+
+  /* UI */
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg: rgba(255, 255, 255, 0.06);
+
+  /* Animation Timing */
+  --transition-fast: 200ms;
+  --transition-medium: 350ms;
+  --transition-slow: 600ms;
+}
+
+/* --------------------------------------------------
+   Global Reset (Safe + Non-conflicting)
+-------------------------------------------------- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary);
+  color: var(--text-light);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Smooth Font Rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------
+   Scrollbar
+-------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
+
+/* --------------------------------------------------
+   Gradient Text Utility
+-------------------------------------------------- */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------
+   Masonry Utilities
+-------------------------------------------------- */
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+/* --------------------------------------------------
+   Animations (Unique + Optimized)
+-------------------------------------------------- */
+
+/* FLOATING */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}
+.animate-float {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+/* GLOW */
+@keyframes glow-soft {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.6; }
+}
+.animate-glow {
+  animation: glow-soft 3s ease-in-out infinite;
+}
+
+/* SHINE (Text Shine Effect) */
+@keyframes shine-sweep {
+  0% { background-position: -200%; }
+  100% { background-position: 200%; }
+}
+.animate-shine {
+  background: linear-gradient(90deg, #00eaff, #b26dff, #00eaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: shine-sweep 3.5s linear infinite;
+}
+
+/* SLOW PULSE */
+@keyframes pulse-slow {
+  0% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.7; transform: scale(1); }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 7s ease-in-out infinite;
+}
+
+/* --------------------------------------------------
+   Background Grid Overlay (Clean + Layered)
+-------------------------------------------------- */
+
+.grid-overlay {
+  background:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+   Utility Classes (Extended Global Styles)
+-------------------------------------------------- */
+
+.card-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.btn-glow {
+  transition: box-shadow var(--transition-medium), transform var(--transition-medium);
+}
+.btn-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.35);
+}
+
