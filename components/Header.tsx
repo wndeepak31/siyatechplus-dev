@@ -27,7 +27,7 @@ export default function Header() {
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/#services" },
+    { label: "Services", href: "/services" },
     { label: "Portfolio", href: "/#portfolio" },
     { label: "Contact", href: "/#contact" },
   ];

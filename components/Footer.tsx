@@ -17,8 +17,7 @@ export default function Footer() {
           </h3>
 
           <p className="leading-relaxed text-sm opacity-85">
-            Your trusted partner for cutting-edge digital solutions. We transform businesses with
-            innovative technology and exceptional service.
+            Transform your business with powerful digital solutions. From RFID-enabled automation to premium e-commerce experiences and custom jewelry solutions, we help brands grow smarter and faster.
           </p>
 
           {/* Social Icons */}
@@ -67,7 +66,7 @@ export default function Footer() {
             </li>
 
             <li>
-              <a href="#services" className="hover:text-neon-cyan transition">Services</a>
+              <a href="/services" className="hover:text-neon-cyan transition">Services</a>
             </li>
 
             <li>
@@ -109,8 +108,12 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white mb-5">Contact Info</h3>
           <ul className="space-y-3 text-sm opacity-90">
             <li>📧 contact@siyatechplus.com</li>
-            <li>📞 +1 (555) 123-4567</li>
-            <li>📍 123 Tech Street, Innovation City</li>
+            <li>📞 +91 86524 29808</li>
+            <li>
+              📍 Laxmi Estate,Tagore Nagar,
+              <br />
+              Vikhroli East, Mumbai, Maharashtra 400083
+            </li>
             <li>🕐 Mon–Fri: 9AM - 6PM</li>
           </ul>
         </div>

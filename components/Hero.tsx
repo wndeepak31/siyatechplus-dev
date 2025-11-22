@@ -36,7 +36,7 @@ export default function Hero() {
     };
   }, [prefersReduced]);
 
-  const headingWords = ["Ultimate", "Digital"];
+  const headingWords = ["Siyatechplus"];
 
   const wordVariants = {
     hidden: { opacity: 0, y: 30, scale: 0.96 },
@@ -144,7 +144,7 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="block text-white mt-2 md:mt-4 drop-shadow-[0_8px_35px_rgba(0,0,0,0.4)]"
           >
-            Solutions for Modern Brands
+            Rfid, Ecommerce & Digital Solution
           </motion.span>
         </h1>
 
@@ -155,8 +155,7 @@ export default function Hero() {
           transition={{ delay: 0.7, duration: 0.7 }}
           className="max-w-2xl mx-auto text-lg md:text-xl text-text-muted mt-6"
         >
-          Scale your business with innovative, future-ready digital solutions.
-          We build premium experiences for eCommerce, manufacturing, and enterprise brands.
+          Transform your business with powerful digital solutions. From RFID-enabled automation to premium e-commerce experiences and custom jewelry solutions, we help brands grow smarter and faster.
         </motion.p>
 
         {/* BUTTONS */}
