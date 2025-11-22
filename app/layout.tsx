@@ -8,10 +8,35 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SiyaTechPlus | Ultimate Digital Solutions',
-  description: 'Professional ecommerce development, RFID solutions, 3D rendering, manufacturing, digital marketing, and CRM systems',
-  keywords: 'ecommerce, RFID, 3D rendering, manufacturing, digital marketing, CRM, web development, SiyaTechPlus',
-}
+  title: 'SiyaTechPlus – RFID Technology, Ecommerce Platforms & Digital Business Solutions',
+  description:
+    'SiyaTechPlus delivers advanced RFID systems, ecommerce solutions, digital automation, and real-time tracking technologies to help businesses optimize operations and scale efficiently.',
+  keywords:
+    'RFID technology, ecommerce development, business automation, digital transformation, real-time tracking, inventory management, warehouse automation, CRM systems, branding solutions, SiyaTechPlus',
+  robots: {
+    index: true,
+    follow: true
+  },
+  alternates: {
+    canonical: 'https://www.siyatechplus.com'
+  },
+  openGraph: {
+    title: 'SiyaTechPlus – RFID Technology, Ecommerce Platforms & Digital Business Solutions',
+    description:
+      'Transform your business with RFID automation, ecommerce platforms, and digital growth solutions by SiyaTechPlus.',
+    url: 'https://www.siyatechplus.com',
+    siteName: 'SiyaTechPlus',
+    type: 'website',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SiyaTechPlus – RFID Technology, Ecommerce Platforms & Digital Business Solutions',
+    description:
+      'RFID automation, ecommerce development, technology solutions to scale modern businesses.',
+  }
+};
+
 
 export default function RootLayout({
   children,
