@@ -10,8 +10,8 @@ import BackToTopButton from "@/components/BackToTopButton";
 
 
 export const metadata: Metadata = {
-  title: 'SiyaTechPlus | Ultimate Digital Solutions',
-  description: 'Professional ecommerce development, RFID solutions, 3D rendering, manufacturing, digital marketing, and CRM systems',
+  title: 'SiyaTechPlus – RFID Technology, Ecommerce Platforms & Digital Business Solutions',
+  description: 'SiyaTechPlus delivers advanced RFID systems, ecommerce solutions, digital automation, and real-time tracking technologies to help businesses optimize operations and scale efficiently.',
 }
 
 export default function Home() {
