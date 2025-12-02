@@ -144,7 +144,7 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.7 }}
             className="block text-white mt-2 md:mt-4 drop-shadow-[0_8px_35px_rgba(0,0,0,0.4)]"
           >
-            Rfid, Ecommerce & Digital Solution
+            RFID, Ecommerce & Digital Solution
           </motion.span>
         </h1>
 
