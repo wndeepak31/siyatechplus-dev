@@ -85,13 +85,6 @@ export default function ServicesPage() {
                       {service.description}
                     </p>
 
-                    {/* BULLETS */}
-                    <ul className="space-y-1.5 text-[11px] md:text-xs text-text-muted mb-6 min-h-[112px]">
-                      {service.features?.map((f, i) => (
-                        <li key={i}>✔ {f}</li>
-                      ))}
-                    </ul>
-
                     {/* CTA BUTTON */}
                     <div className="mt-auto flex items-center justify-between pt-2">
                       <Link
