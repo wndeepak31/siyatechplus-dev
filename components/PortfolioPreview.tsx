@@ -71,7 +71,10 @@ export default function PortfolioPreview({ projectsByService }: PortfolioPreview
                       </div>
                     </>
                   ) : (
-                    <span className="text-6xl">{service?.icon}</span>
+                    <span className="text-6xl">
+                        {service?.icon ? <service.icon className="w-12 h-12 text-neon-cyan" /> : null}
+                    </span>
+
                   )}
                 </div>
 
