@@ -193,13 +193,13 @@ export default function AboutPage() {
           </p>
           <div className="flex justify-center gap-4 pt-2">
             <a
-              href="#contact"
+              href="/#contact"
               className="px-8 py-3 rounded-full text-sm md:text-base font-semibold bg-gradient-to-r from-neon-cyan to-neon-purple text-primary hover:shadow-[0_0_30px_rgba(0,240,255,0.45)] transition-all"
             >
               Talk to Our Team
             </a>
             <a
-              href="#services"
+              href="/services"
               className="px-8 py-3 rounded-full text-sm md:text-base font-semibold border border-neon-cyan/60 text-neon-cyan hover:bg-neon-cyan/10 transition-all"
             >
               View Services

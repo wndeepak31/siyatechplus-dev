@@ -88,10 +88,10 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "corporate", label: "Corporate Websites" },
-      { id: "ecommerce", label: "Ecommerce Platforms" },
-      { id: "mobileapps", label: "Mobile Apps" },
-      { id: "saas", label: "SaaS Applications" },
+      // { id: "corporate", label: "Corporate Websites" },
+      // { id: "ecommerce", label: "Ecommerce Platforms" },
+      // { id: "mobileapps", label: "Mobile Apps" },
+      // { id: "saas", label: "SaaS Applications" },
     ],
   },
 
@@ -124,10 +124,10 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "warehouse", label: "Warehouse" },
-      { id: "retail", label: "Retail" },
-      { id: "manufacturing", label: "Manufacturing" },
-      { id: "healthcare", label: "Healthcare" },
+      // { id: "warehouse", label: "Warehouse" },
+      // { id: "retail", label: "Retail" },
+      // { id: "manufacturing", label: "Manufacturing" },
+      // { id: "healthcare", label: "Healthcare" },
     ],
   },
 
@@ -178,10 +178,10 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "workflows", label: "Workflows" },
-      { id: "automation", label: "Automation" },
-      { id: "bots", label: "Bots" },
-      { id: "ai", label: "AI Automation" },
+      // { id: "workflows", label: "Workflows" },
+      // { id: "automation", label: "Automation" },
+      // { id: "bots", label: "Bots" },
+      // { id: "ai", label: "AI Automation" },
     ],
   },
 
@@ -233,10 +233,10 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "crm", label: "CRM Systems" },
-      { id: "erp", label: "ERP Solutions" },
-      { id: "automation", label: "Automation" },
-      { id: "analytics", label: "Analytics" },
+      // { id: "crm", label: "CRM Systems" },
+      // { id: "erp", label: "ERP Solutions" },
+      // { id: "automation", label: "Automation" },
+      // { id: "analytics", label: "Analytics" },
     ],
   },
 
@@ -269,9 +269,9 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "jewelry", label: "Jewelry" },
-      { id: "architecture", label: "Architecture" },
-      { id: "product", label: "Product" },
+      // { id: "jewelry", label: "Jewelry" },
+      // { id: "architecture", label: "Architecture" },
+      // { id: "product", label: "Product" },
     ],
   },
 
@@ -304,10 +304,10 @@ export const services: ServiceConfig[] = [
     ],
 
     categories: [
-      { id: "prototyping", label: "Prototyping" },
-      { id: "production", label: "Production" },
-      { id: "quality", label: "Quality Control" },
-      { id: "automation", label: "Automation" },
+      // { id: "prototyping", label: "Prototyping" },
+      // { id: "production", label: "Production" },
+      // { id: "quality", label: "Quality Control" },
+      // { id: "automation", label: "Automation" },
     ],
   },
 

@@ -1,11 +1,12 @@
+// PROJECT MODEL
 export interface Project {
   id: string;
   title: string;
   description: string;
-  category: string;
-  service: string;
+  category: string;   // must match categories[] inside each service
+  service: string;    // must match service.id of services.ts
   image?: string;
-  videoId?: string; // YouTube video ID
+  videoId?: string;
   stats?: {
     label: string;
     value: string;
@@ -14,172 +15,277 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // ECOMMERCE PROJECTS
+
+  // ----------------------------------------
+  // ⭐ 1️⃣ WEB / APP DEVELOPMENT
+  // ----------------------------------------
   {
-    id: 'ecom-1',
-    title: 'Lumina Luxury Jewelry',
-    description: 'Complete ecommerce platform with 3D product visualization and AR try-on. Increased sales by 250%.',
-    category: 'jewelry',
-    service: 'ecommerce-development',
-    image: '/placeholder-jewelry.jpg',
-    videoId: 'dQw4w9WgXcQ', // Replace with your actual YouTube ID
+    id: "web-1",
+    title: "Luxury Jewely Website",
+    description:
+      "High-performance Luxury Jewely Website, SEO-optimized structure and lightning-fast UI.",
+    category: "corporate",
+    service: "web-app-development",
+    videoId: "kl5mJSfx_3U",
     stats: [
-      { label: 'Sales', value: '250% ↑' },
-      { label: 'Returns', value: '85% ↓' }
+      { label: "Page Speed", value: "98 Score" },
+      { label: "Leads", value: "3× Increase" },
     ],
-    technologies: ['Shopify', '3D Rendering', 'AR']
+    technologies: ["Next.js", "React", "TailwindCSS"],
+  },
+  // {
+  //   id: "web-2",
+  //   title: "Modern Ecommerce Platform",
+  //   description:
+  //     "Custom ecommerce platform with secure checkout, admin panel, product management & analytics.",
+  //   category: "ecommerce",
+  //   service: "web-app-development",
+  //   videoId: "YOUTUBE_ID_102",
+  //   stats: [
+  //     { label: "Conversion", value: "180% ↑" },
+  //     { label: "Cart Value", value: "+$42" },
+  //   ],
+  //   technologies: ["Next.js", "Node.js", "Stripe"],
+  // },
+  // {
+  //   id: "web-3",
+  //   title: "SaaS Analytics Dashboard",
+  //   description:
+  //     "Custom SaaS platform with modular dashboards, user authentication and real-time metrics.",
+  //   category: "saas",
+  //   service: "web-app-development",
+  //   videoId: "YOUTUBE_ID_103",
+  //   stats: [
+  //     { label: "Active Users", value: "12K+" },
+  //     { label: "Uptime", value: "99.9%" },
+  //   ],
+  //   technologies: ["React", "NestJS", "PostgreSQL"],
+  // },
+
+  // ----------------------------------------
+  // ⭐ 2️⃣ RFID SOLUTIONS
+  // ----------------------------------------
+  {
+    id: "rfid-1",
+    title: "RFID Technology",
+    description:
+      "A complete explainer video demonstrating how RFID works, including tag reading, data capture, antenna interaction, and real-time tracking fundamentals.",
+    category: "warehouse",
+    service: "rfid-solutions",
+    videoId: "rKfEIxnG5As",  // Your actual video
+    stats: [
+      { label: "Concepts Covered", value: "10+" },
+      { label: "Duration", value: "Short Demo" }
+    ],
+    technologies: ["RFID Tags", "RFID Readers", "Antenna", "Middleware"]
   },
   {
-    id: 'ecom-2',
-    title: 'Fashion Hub Online',
-    description: 'Modern fashion store with AI sizing and multi-currency support. 180% conversion boost.',
-    category: 'fashion',
-    service: 'ecommerce-development',
+    id: "rfid-2",
+    title: "RFID POS Billing System",
+    description:
+      "A demonstration of an RFID-enabled POS billing system showing how tagged items are instantly scanned, identified, and processed at checkout.",
+    category: "retail",
+    service: "rfid-solutions",
+    videoId: "WdwCkzQ_Iac",
     stats: [
-      { label: 'Conversion', value: '180% ↑' },
-      { label: 'Cart Value', value: '$125' }
-    ]
+      { label: "Scan Speed", value: "Instant" },
+      { label: "Items Processed", value: "Multiple at Once" }
+    ],
+    technologies: ["RFID Reader", "RFID Tags", "POS System", "Retail Checkout"]
   },
   {
-    id: 'ecom-3',
-    title: 'Tech Gadgets Pro',
-    description: 'Electronics marketplace with real-time inventory and smart search. 50K monthly users.',
-    category: 'electronics',
-    service: 'ecommerce-development',
+    id: "rfid-3",
+    title: "Pocket RFID Device",
+    description:
+      "A compact RFID handheld device designed for sales teams to scan assets, verify stock, and sync activity data in real-time for admin monitoring.",
+    category: "manufacturing", // or "retail" or "manufacturing" — choose below!
+    service: "rfid-solutions",
+    videoId: "8oNWhmxAySo",
     stats: [
-      { label: 'Users', value: '50K/mo' },
-      { label: 'Uptime', value: '99.9%' }
-    ]
+      { label: "Device Size", value: "Pocket-Friendly" },
+      { label: "Real-Time Sync", value: "Enabled" }
+    ],
+    technologies: ["Handheld RFID", "UHF Reading", "Mobile Sync", "IoT"]
+  },
+  {
+    id: "rfid-4",
+    title: "RFID Billing Tray for Jewelry & Retail",
+    description:
+      "RFID-enabled billing tray that instantly detects all tagged jewelry or products placed on it, enabling fast billing, stock visibility, and seamless checkout.",
+    category: "retail",
+    service: "rfid-solutions",
+    videoId: "4EnSp4qt3Ck",
+    stats: [
+      { label: "Billing Speed", value: "Instant Scan" },
+      { label: "Items Detected", value: "Multiple at Once" }
+    ],
+    technologies: ["RFID Tray", "UHF Tags", "POS Integration", "Real-Time Sync"]
   },
 
-  // RFID PROJECTS
+  // ----------------------------------------
+  // ⭐ 3️⃣ AUTOMATIONS
+  // ----------------------------------------
   {
-    id: 'rfid-1',
-    title: 'SmartWarehouse Pro',
-    description: 'Real-time inventory tracking system reducing search time by 90% for 200K+ items.',
-    category: 'warehouse',
-    service: 'rfid-solutions',
-    videoId: 'YOUR_VIDEO_ID',
+    id: "auto-1",
+    title: "AI Smart TV Interface (Windows & Android)",
+    description:
+      "An AI-powered smart TV experience that runs on both Windows and Android, offering voice control, automated actions, and intelligent content navigation.",
+    category: "ai",
+    service: "automation",
+    videoId: "RbaO-7_SZkI",
     stats: [
-      { label: 'Search Time', value: '90% ↓' },
-      { label: 'Items', value: '200K+' }
-    ]
+      { label: "Platforms", value: "Windows & Android" },
+      { label: "Interaction", value: "AI Voice Control" }
+    ],
+    technologies: ["AI Automation", "Android", "Windows", "Voice Commands", "Custom UI"]
+  },
+  // {
+  //   id: "auto-2",
+  //   title: "System Integration Pipeline",
+  //   description:
+  //     "Custom API integration connecting CRM, ERP, ecommerce and internal applications.",
+  //   category: "automation",
+  //   service: "automation",
+  //   videoId: "YOUTUBE_ID_302",
+  //   stats: [
+  //     { label: "Sync Speed", value: "Real-Time" },
+  //     { label: "Error Reduction", value: "80% ↓" },
+  //   ],
+  // },
+  // {
+  //   id: "auto-3",
+  //   title: "AI Chatbot & Automation Bot",
+  //   description:
+  //     "AI-driven conversation bot for customer support and automated task handling.",
+  //   category: "bots",
+  //   service: "automation",
+  //   videoId: "YOUTUBE_ID_303",
+  //   stats: [
+  //     { label: "Support Load", value: "60% ↓" },
+  //     { label: "Response Time", value: "Instant" },
+  //   ],
+  // },
+
+  // ----------------------------------------
+  // ⭐ 4️⃣ CRM / ERP SYSTEMS
+  // ----------------------------------------
+  {
+    id: "crm-1",
+    title: "Sales CRM Automation",
+    description:
+      "Custom CRM with lead scoring, email automation and analytics dashboards.",
+    category: "crm",
+    service: "crm-erp",
+    videoId: "kbvVLA5ee9w",
+    stats: [
+      { label: "Lead Increase", value: "300% ↑" },
+      { label: "Close Rate", value: "45%" },
+    ],
+  },
+  // {
+  //   id: "crm-2",
+  //   title: "Inventory + Billing ERP",
+  //   description:
+  //     "Full ERP system with inventory, invoices, purchase orders and vendor management.",
+  //   category: "erp",
+  //   service: "crm-erp",
+  //   videoId: "YOUTUBE_ID_402",
+  // },
+  // {
+  //   id: "crm-3",
+  //   title: "Analytics Dashboard System",
+  //   description:
+  //     "BI dashboards with insights, KPIs, financial reports & user activity tracking.",
+  //   category: "analytics",
+  //   service: "crm-erp",
+  //   videoId: "YOUTUBE_ID_403",
+  // },
+
+  // ----------------------------------------
+  // ⭐ 5️⃣ 3D RENDERING & VISUALIZATION
+  // ----------------------------------------
+  {
+    id: "render-1",
+    title: "Jewelry 3D Visualization",
+    description:
+      "Photorealistic 3D jewelry renders, 360° animations and marketing visuals.",
+    category: "jewelry",
+    service: "3d-rendering-and-visualisation",
+    videoId: "YOUTUBE_ID_501",
+    stats: [
+      { label: "Renders Created", value: "500+" },
+      { label: "Resolution", value: "8K" },
+    ],
   },
   {
-    id: 'rfid-2',
-    title: 'Retail Guardian',
-    description: 'Anti-theft RFID system with analytics dashboard. 95% theft reduction.',
-    category: 'retail',
-    service: 'rfid-solutions',
-    stats: [
-      { label: 'Theft', value: '95% ↓' },
-      { label: 'Stores', value: '45' }
-    ]
+    id: "render-2",
+    title: "Architectural Walkthrough",
+    description:
+      "High-fidelity 3D architectural visualization of luxury properties.",
+    category: "architecture",
+    service: "3d-rendering-and-visualisation",
+    videoId: "YOUTUBE_ID_502",
+  },
+  {
+    id: "render-3",
+    title: "Product Rendering Suite",
+    description:
+      "3D visuals for consumer electronics, appliances and industrial products.",
+    category: "product",
+    service: "3d-rendering-and-visualisation",
+    videoId: "YOUTUBE_ID_503",
   },
 
-  // 3D RENDERING PROJECTS
+  // ----------------------------------------
+  // ⭐ 6️⃣ MANUFACTURING SOLUTIONS
+  // ----------------------------------------
   {
-    id: 'render-1',
-    title: 'Diamond Collection 3D',
-    description: 'Photorealistic jewelry renders with 360° turntable animations for online catalogs.',
-    category: 'jewelry',
-    service: '3d-rendering-and-visualisation',
-    videoId: 'YOUR_VIDEO_ID',
+    id: "mfg-1",
+    title: "Rapid Prototyping Workflow",
+    description:
+      "CAD-integrated manufacturing pipeline with 3D printing automation.",
+    category: "prototyping",
+    service: "manufacturing-solutions",
+    videoId: "YOUTUBE_ID_601",
     stats: [
-      { label: 'Renders', value: '500+' },
-      { label: 'Quality', value: '8K' }
-    ]
-  },
-  {
-    id: 'render-2',
-    title: 'Villa Architectural Viz',
-    description: 'Stunning architectural visualization for luxury real estate marketing.',
-    category: 'architecture',
-    service: '3d-rendering-and-visualisation',
-  },
-  {
-    id: 'render-3',
-    title: 'Product Showcase 3D',
-    description: 'High-end product renders for e-commerce and marketing materials.',
-    category: 'product',
-    service: '3d-rendering-and-visualisation',
+      { label: "Speed Increase", value: "70% ↑" },
+      { label: "Cost Reduction", value: "40% ↓" },
+    ],
   },
 
-  // MANUFACTURING PROJECTS
   {
-    id: 'mfg-1',
-    title: 'Rapid Prototype System',
-    description: '3D printed prototypes with CAD integration. 70% faster than traditional methods.',
-    category: 'prototyping',
-    service: 'manufacturing-solutions',
-    stats: [
-      { label: 'Speed', value: '70% ↑' },
-      { label: 'Cost', value: '40% ↓' }
-    ]
+    id: "mfg-2",
+    title: "CNC Production System",
+    description:
+      "Precision manufacturing using CNC machines with automated job scheduling.",
+    category: "production",
+    service: "manufacturing-solutions",
+    videoId: "YOUTUBE_ID_602",
   },
   {
-    id: 'mfg-2',
-    title: 'Precision CNC Parts',
-    description: 'High-precision CNC manufacturing for aerospace and medical industries.',
-    category: 'production',
-    service: 'manufacturing-solutions',
+    id: "mfg-3",
+    title: "Quality Control Automation",
+    description:
+      "AI-powered inspection system for defect detection and quality scoring.",
+    category: "quality",
+    service: "manufacturing-solutions",
+    videoId: "YOUTUBE_ID_603",
+    stats: [
+      { label: "Accuracy", value: "99.5%" },
+      { label: "Inspection Time", value: "82% ↓" },
+    ],
   },
 
-  // MARKETING PROJECTS
-  {
-    id: 'mkt-1',
-    title: 'Brand 360 Campaign',
-    description: 'Multi-channel marketing strategy resulting in 400% ROI.',
-    category: 'social',
-    service: 'digital-marketing',
-    stats: [
-      { label: 'ROI', value: '400%' },
-      { label: 'Reach', value: '2M+' }
-    ]
-  },
-  {
-    id: 'mkt-2',
-    title: 'SEO Success Story',
-    description: 'Organic traffic growth from 1K to 50K monthly visitors in 6 months.',
-    category: 'seo',
-    service: 'digital-marketing',
-    stats: [
-      { label: 'Traffic', value: '5000%' },
-      { label: 'Keywords', value: '#1 Rank' }
-    ]
-  },
-
-  // CRM PROJECTS
-  {
-    id: 'crm-1',
-    title: 'Sales Automation Platform',
-    description: 'Custom CRM with AI lead scoring and automated workflows.',
-    category: 'sales',
-    service: 'crm-systems',
-    stats: [
-      { label: 'Leads', value: '300% ↑' },
-      { label: 'Close Rate', value: '45%' }
-    ]
-  },
-  {
-    id: 'crm-2',
-    title: 'Customer Insights Dashboard',
-    description: 'Advanced analytics platform for customer behavior tracking.',
-    category: 'analytics',
-    service: 'crm-systems',
-  },
 ];
 
-// Helper functions
-export const getProjectsByService = (service: string) => {
-  return projects.filter(p => p.service === service);
-};
+// HELPERS
+export const getProjectsByService = (service: string) =>
+  projects.filter((p) => p.service === service);
 
-export const getProjectsByCategory = (service: string, category: string) => {
-  return projects.filter(p => p.service === service && p.category === category);
-};
+export const getProjectsByCategory = (service: string, category: string) =>
+  projects.filter((p) => p.service === service && p.category === category);
 
 export const getCategories = (service: string): string[] => {
   const serviceProjects = getProjectsByService(service);
-  return Array.from(new Set(serviceProjects.map(p => p.category)));
+  return Array.from(new Set(serviceProjects.map((p) => p.category)));
 };

@@ -93,12 +93,12 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-white mb-5">Services</h3>
           <ul className="space-y-3 text-sm">
 
-            <li><a href="#services" className="hover:text-neon-cyan transition">eCommerce Development</a></li>
-            <li><a href="#services" className="hover:text-neon-cyan transition">RFID Solutions</a></li>
-            <li><a href="#services" className="hover:text-neon-cyan transition">3D Rendering</a></li>
-            <li><a href="#services" className="hover:text-neon-cyan transition">Manufacturing</a></li>
-            <li><a href="#services" className="hover:text-neon-cyan transition">Digital Marketing</a></li>
-            <li><a href="#services" className="hover:text-neon-cyan transition">CRM Systems</a></li>
+            <li><a href="/services/web-app-development" className="hover:text-neon-cyan transition">Web / App Development</a></li>
+            <li><a href="/services/rfid-solutions" className="hover:text-neon-cyan transition">RFID Solutions</a></li>
+            <li><a href="/services/automation" className="hover:text-neon-cyan transition">Automations</a></li>
+            <li><a href="/services/crm-erp" className="hover:text-neon-cyan transition">CRM / ERP Systems</a></li>
+            <li><a href="/services/3d-rendering-and-visualisation" className="hover:text-neon-cyan transition">3D Rendering & Visualization</a></li>
+            <li><a href="/services/manufacturing-solutions" className="hover:text-neon-cyan transition">Manufacturing</a></li>
 
           </ul>
         </div>
@@ -122,7 +122,8 @@ export default function Footer() {
 
       {/* Bottom Line */}
       <div className="mt-16 text-center pt-6 border-t border-white/10 text-xs opacity-70">
-        © 2025 SiyaTechPlus. All rights reserved. | Privacy Policy | Terms of Service
+        {/* © 2025 SiyaTechPlus. All rights reserved. | Privacy Policy | Terms of Service */}
+        © 2025 SiyaTechPlus. All rights reserved.
       </div>
 
       {/* Bottom Glow */}

@@ -66,7 +66,7 @@ export default function ServicePage({ params }: PageProps) {
   return (
     <div className="pt-20">
       {/* HERO SECTION */}
-      <section className="relative py-32 px-6 bg-gradient-to-b from-primary to-secondary overflow-hidden">
+      <section className="relative py-16 px-6 bg-gradient-to-b from-primary to-secondary overflow-hidden">
         {/* Icon Background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5">
           <HeroIcon className="w-[14rem] h-[14rem]" />
