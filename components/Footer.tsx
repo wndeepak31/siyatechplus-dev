@@ -22,16 +22,16 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-6">
-            <a
+            {/* <a
               href="https://facebook.com"
               target="_blank"
               className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neon-cyan/40 transition-all shadow-lg shadow-black/40 hover:shadow-neon-cyan/30"
             >
               <Facebook className="w-5 h-5 text-white group-hover:text-neon-cyan transition" />
-            </a>
+            </a> */}
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/siyatechplus/"
               target="_blank"
               className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neon-cyan/40 transition-all shadow-lg shadow-black/40 hover:shadow-neon-cyan/30"
             >
@@ -39,7 +39,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/siyatech-plus-76770a397/"
               target="_blank"
               className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neon-cyan/40 transition-all shadow-lg shadow-black/40 hover:shadow-neon-cyan/30"
             >
@@ -47,7 +47,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@Siyatechplus"
               target="_blank"
               className="group p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-neon-cyan/40 transition-all shadow-lg shadow-black/40 hover:shadow-neon-cyan/30"
             >

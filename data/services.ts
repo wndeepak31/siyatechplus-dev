@@ -1,4 +1,4 @@
-import { ComponentType } from "react";
+import { ComponentType } from "react"; 
 import {
   Code2,
   Smartphone,
@@ -13,6 +13,7 @@ import {
   Building2,
   Layers3,
   LayoutDashboard,
+  Zap,
 } from "lucide-react";
 
 export interface ServiceConfig {
@@ -39,6 +40,8 @@ export interface ServiceConfig {
 }
 
 export const services: ServiceConfig[] = [
+
+  /* 1️⃣ WEB / APP DEVELOPMENT */
   {
     id: "web-app-development",
     slug: "web-app-development",
@@ -54,7 +57,7 @@ export const services: ServiceConfig[] = [
       "We build high-performance websites and mobile apps using Next.js, React, React Native and modern technologies.",
 
     icon: Code2,
-    heroEmoji: Code2, // 🔥 added
+    heroEmoji: Code2,
     h1: "Web / App Development Services",
 
     sections: [
@@ -92,10 +95,11 @@ export const services: ServiceConfig[] = [
     ],
   },
 
+  /* 2️⃣ RFID SOLUTIONS */
   {
     id: "rfid-solutions",
     slug: "rfid-solutions",
-    name: "RFID Solutions",
+    name: "RFID SOLUTIONS",
     title: "RFID Solutions & Smart Tracking Systems In India | SiyaTechPlus",
     metaTitle: "RFID Solutions & Smart Tracking Systems In India | SiyaTechPlus",
     metaDescription:
@@ -107,7 +111,7 @@ export const services: ServiceConfig[] = [
       "Enhance efficiency and traceability with our RFID technology for logistics, retail, and manufacturing.",
 
     icon: Radio,
-    heroEmoji: Radio, // 🔥 added
+    heroEmoji: Radio,
     h1: "RFID Solutions & Smart Tracking Systems",
 
     sections: [
@@ -127,10 +131,120 @@ export const services: ServiceConfig[] = [
     ],
   },
 
+  /* 3️⃣ AUTOMATIONS */
+  {
+    id: "automation",
+    slug: "automation",
+    name: "AUTOMATIONS",
+    title: "Business Process Automation Services | SiyaTechPlus",
+    metaTitle: "Automations & Workflow Automation | SiyaTechPlus",
+    metaDescription:
+      "Automate your business operations with intelligent automation solutions that reduce manual work, increase efficiency, and streamline workflows.",
+    ogTitle: "Business Automation Solutions",
+    ogDescription:
+      "Automate repetitive tasks, optimize workflows, and enhance efficiency across your business operations.",
+    description:
+      "Streamline your business operations with intelligent automation solutions that reduce manual work, increase efficiency, and eliminate repetitive tasks.",
+
+    icon: Zap,
+    heroEmoji: Zap,
+    h1: "Automation Services",
+
+    sections: [
+      {
+        h2: "Business Workflow Automation",
+        h3: [
+          "Automate repetitive tasks",
+          "Reduce manual errors",
+          "Increase operational efficiency",
+        ],
+      },
+      {
+        h2: "Integration & System Automation",
+        h3: [
+          "API & Software Integrations",
+          "Automated Data Sync",
+          "Custom Automation Pipelines",
+        ],
+      },
+      {
+        h2: "AI-Driven Automations",
+        h3: [
+          "Intelligent Decision Automation",
+          "Custom Bots & Agents",
+          "Predictive Analytics Workflows",
+        ],
+      },
+    ],
+
+    categories: [
+      { id: "workflows", label: "Workflows" },
+      { id: "automation", label: "Automation" },
+      { id: "bots", label: "Bots" },
+      { id: "ai", label: "AI Automation" },
+    ],
+  },
+
+  /* 4️⃣ CRM / ERP */
+  {
+    id: "crm-erp",
+    slug: "crm-erp",
+    name: "CRM / ERP",
+    title: "CRM & ERP Development Services | SiyaTechPlus",
+    metaTitle:
+      "CRM / ERP Systems – Custom Business Management Solutions | SiyaTechPlus",
+    metaDescription:
+      "Custom CRM & ERP solutions for lead management, workflow automation, business intelligence, and data-driven decision-making.",
+    ogTitle: "CRM & ERP Development Services",
+    ogDescription:
+      "Build custom CRM and ERP systems to streamline operations, manage data, and improve business efficiency.",
+    description:
+      "Custom CRM and ERP systems for sales management, workflow automation, dashboards, reporting, and end-to-end business operations.",
+
+    icon: LayoutDashboard,
+    heroEmoji: LayoutDashboard,
+    h1: "CRM / ERP System Development",
+
+    sections: [
+      {
+        h2: "Custom CRM Development",
+        h3: [
+          "Lead & Client Management",
+          "Sales Pipeline Tracking",
+          "Custom Dashboard Reporting",
+        ],
+      },
+      {
+        h2: "ERP System Solutions",
+        h3: [
+          "Inventory & Billing Systems",
+          "Order & Workflow Automation",
+          "Role-Based Access & Permissions",
+        ],
+      },
+      {
+        h2: "Integrations & Automation",
+        h3: [
+          "API Integrations",
+          "Third-Party System Sync",
+          "Analytics & Data Management",
+        ],
+      },
+    ],
+
+    categories: [
+      { id: "crm", label: "CRM Systems" },
+      { id: "erp", label: "ERP Solutions" },
+      { id: "automation", label: "Automation" },
+      { id: "analytics", label: "Analytics" },
+    ],
+  },
+
+  /* 5️⃣ 3D RENDERING & VISUALIZATION */
   {
     id: "3d-rendering-and-visualisation",
     slug: "3d-rendering-and-visualisation",
-    name: "3D Rendering & Visualization",
+    name: "3D RENDERING & VISUALIZATION",
     title: "3D Rendering & Visualization Services In India | SiyaTechPlus",
     metaTitle: "3D Rendering & Visualization Services In India | SiyaTechPlus",
     metaDescription:
@@ -142,7 +256,7 @@ export const services: ServiceConfig[] = [
       "3D visualization services for jewelry, products, architecture and industrial designs.",
 
     icon: Shapes,
-    heroEmoji: Shapes, // 🔥 added
+    heroEmoji: Shapes,
     h1: "3D Rendering & Visualization Services",
 
     sections: [
@@ -161,10 +275,11 @@ export const services: ServiceConfig[] = [
     ],
   },
 
+  /* 6️⃣ MANUFACTURING SOLUTIONS */
   {
     id: "manufacturing-solutions",
     slug: "manufacturing-solutions",
-    name: "Manufacturing Solutions",
+    name: "MANUFACTURING SOLUTIONS",
     title: "Manufacturing Solutions & Automation Services | SiyaTechPlus",
     metaTitle: "Manufacturing Solutions & Automation Services | SiyaTechPlus",
     metaDescription:
@@ -176,7 +291,7 @@ export const services: ServiceConfig[] = [
       "Solutions for prototyping, production, IoT, automation and industry workflows.",
 
     icon: Cpu,
-    heroEmoji: Cpu, // 🔥 added
+    heroEmoji: Cpu,
     h1: "Manufacturing Solutions & Automation Services",
 
     sections: [
@@ -196,79 +311,6 @@ export const services: ServiceConfig[] = [
     ],
   },
 
-  {
-    id: "digital-marketing",
-    slug: "digital-marketing",
-    name: "Digital Marketing",
-    title:
-      "Digital Marketing Services In India - SEO, PPC, Social Media | SiyaTechPlus",
-    metaTitle:
-      "Digital Marketing Services In India - SEO, PPC, Social Media | SiyaTechPlus",
-    metaDescription:
-      "SiyaTechPlus has 15+ years of experience in SEO, PPC, Social Media & Digital Marketing.",
-    ogTitle: "Digital Marketing Services | SEO, PPC, Social Media",
-    ogDescription:
-      "Boost your brand with SEO, PPC, social media marketing and data-driven strategies.",
-    description:
-      "SEO, PPC campaigns, content marketing, branding, and data-driven digital strategies.",
-
-    icon: LineChart,
-    heroEmoji: LineChart, // 🔥 added
-    h1: "Digital Marketing Services",
-
-    sections: [
-      { h2: "SEO & Content Marketing", h3: [] },
-      { h2: "Social Media Management", h3: [] },
-      {
-        h2: "PPC & Advertising",
-        h3: ["Analytics & Reporting", "Conversion Optimization"],
-      },
-    ],
-
-    categories: [
-      { id: "social", label: "Social Media" },
-      { id: "seo", label: "SEO" },
-      { id: "ppc", label: "PPC" },
-      { id: "content", label: "Content" },
-    ],
-  },
-
-  {
-    id: "crm-systems",
-    slug: "crm-systems",
-    name: "CRM Systems",
-    title:
-      "Customer Relationship Management (CRM) System Services | SiyaTechPlus",
-    metaTitle:
-      "Customer Relationship Management (CRM) System Services | SiyaTechPlus",
-    metaDescription:
-      "CRM systems services in India. SiyaTechPlus provides best CRM systems for jewelry CRM and other industries.",
-    ogTitle: "CRM System Development & Integration",
-    ogDescription:
-      "Empower your business with custom CRM systems that enhance productivity and customer satisfaction.",
-    description:
-      "CRM platforms for lead management, automation, dashboards and business reporting.",
-
-    icon: LayoutDashboard,
-    heroEmoji: LayoutDashboard, // 🔥 added
-    h1: "CRM System Services",
-
-    sections: [
-      { h2: "Custom CRM Development", h3: [] },
-      { h2: "CRM Integration Services", h3: [] },
-      {
-        h2: "Automation & Data Management",
-        h3: ["Sales & Support Tools", "Analytics & Dashboard Insights"],
-      },
-    ],
-
-    categories: [
-      { id: "sales", label: "Sales CRM" },
-      { id: "analytics", label: "Analytics" },
-      { id: "automation", label: "Automation" },
-      { id: "integration", label: "Integration" },
-    ],
-  },
 ];
 
 export const getServiceById = (id: string) => {
