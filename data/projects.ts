@@ -79,34 +79,34 @@ export const projects: Project[] = [
     ],
     technologies: ["RFID Tags", "RFID Readers", "Antenna", "Middleware"]
   },
-  // {
-  //   id: "rfid-2",
-  //   title: "RFID POS Billing System",
-  //   description:
-  //     "A demonstration of an RFID-enabled POS billing system showing how tagged items are instantly scanned, identified, and processed at checkout.",
-  //   category: "retail",
-  //   service: "rfid-solutions",
-  //   videoId: "WdwCkzQ_Iac",
-  //   stats: [
-  //     { label: "Scan Speed", value: "Instant" },
-  //     { label: "Items Processed", value: "Multiple at Once" }
-  //   ],
-  //   technologies: ["RFID Reader", "RFID Tags", "POS System", "Retail Checkout"]
-  // },
-  // {
-  //   id: "rfid-3",
-  //   title: "Pocket RFID Device",
-  //   description:
-  //     "A compact RFID handheld device designed for sales teams to scan assets, verify stock, and sync activity data in real-time for admin monitoring.",
-  //   category: "manufacturing", // or "retail" or "manufacturing" — choose below!
-  //   service: "rfid-solutions",
-  //   videoId: "8oNWhmxAySo",
-  //   stats: [
-  //     { label: "Device Size", value: "Pocket-Friendly" },
-  //     { label: "Real-Time Sync", value: "Enabled" }
-  //   ],
-  //   technologies: ["Handheld RFID", "UHF Reading", "Mobile Sync", "IoT"]
-  // },
+  {
+    id: "rfid-2",
+    title: "RFID POS Billing System",
+    description:
+      "A demonstration of an RFID-enabled POS billing system showing how tagged items are instantly scanned, identified, and processed at checkout.",
+    category: "retail",
+    service: "rfid-solutions",
+    videoId: "kAPVs12OkG4",
+    stats: [
+      { label: "Scan Speed", value: "Instant" },
+      { label: "Items Processed", value: "Multiple at Once" }
+    ],
+    technologies: ["RFID Reader", "RFID Tags", "POS System", "Retail Checkout"]
+  },
+  {
+    id: "rfid-3",
+    title: "Pocket RFID Device",
+    description:
+      "A compact RFID handheld device designed for sales teams to scan assets, verify stock, and sync activity data in real-time for admin monitoring.",
+    category: "manufacturing", // or "retail" or "manufacturing" — choose below!
+    service: "rfid-solutions",
+    videoId: "lhZGqPI73gM",
+    stats: [
+      { label: "Device Size", value: "Pocket-Friendly" },
+      { label: "Real-Time Sync", value: "Enabled" }
+    ],
+    technologies: ["Handheld RFID", "UHF Reading", "Mobile Sync", "IoT"]
+  },
   {
     id: "rfid-4",
     title: "RFID Billing Tray for Jewelry & Retail",
