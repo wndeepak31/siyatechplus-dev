@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "A complete explainer video demonstrating how RFID works, including tag reading, data capture, antenna interaction, and real-time tracking fundamentals.",
     category: "warehouse",
     service: "rfid-solutions",
-    videoId: "nhRmIEnmCc",  // Your actual video
+    videoId: "-nhRmIEnmCc",  // Your actual video
     stats: [
       { label: "Concepts Covered", value: "10+" },
       { label: "Duration", value: "Short Demo" }
