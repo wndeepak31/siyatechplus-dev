@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "A complete explainer video demonstrating how RFID works, including tag reading, data capture, antenna interaction, and real-time tracking fundamentals.",
     category: "warehouse",
     service: "rfid-solutions",
-    videoId: "rKfEIxnG5As",  // Your actual video
+    videoId: "nhRmIEnmCc",  // Your actual video
     stats: [
       { label: "Concepts Covered", value: "10+" },
       { label: "Duration", value: "Short Demo" }
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       "RFID-enabled billing tray that instantly detects all tagged jewelry or products placed on it, enabling fast billing, stock visibility, and seamless checkout.",
     category: "retail",
     service: "rfid-solutions",
-    videoId: "4EnSp4qt3Ck",
+    videoId: "aG0mK2oUE2M",
     stats: [
       { label: "Billing Speed", value: "Instant Scan" },
       { label: "Items Detected", value: "Multiple at Once" }
@@ -132,7 +132,7 @@ export const projects: Project[] = [
       "An AI-powered smart TV experience that runs on both Windows and Android, offering voice control, automated actions, and intelligent content navigation.",
     category: "ai",
     service: "automation",
-    videoId: "RbaO-7_SZkI",
+    videoId: "cLecan6etHo",
     stats: [
       { label: "Platforms", value: "Windows & Android" },
       { label: "Interaction", value: "AI Voice Control" }
