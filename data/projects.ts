@@ -201,40 +201,138 @@ export const projects: Project[] = [
   //   videoId: "YOUTUBE_ID_403",
   // },
 
-  // ----------------------------------------
-  // ⭐ 5️⃣ 3D RENDERING & VISUALIZATION
-  // ----------------------------------------
-  {
-    id: "render-1",
-    title: "Jewelry 3D Visualization",
-    description:
-      "Photorealistic 3D jewelry renders, 360° animations and marketing visuals.",
-    category: "jewelry",
-    service: "3d-rendering-and-visualisation",
-    videoId: "YOUTUBE_ID_501",
-    stats: [
-      { label: "Renders Created", value: "500+" },
-      { label: "Resolution", value: "8K" },
-    ],
-  },
-  {
-    id: "render-2",
-    title: "Architectural Walkthrough",
-    description:
-      "High-fidelity 3D architectural visualization of luxury properties.",
-    category: "architecture",
-    service: "3d-rendering-and-visualisation",
-    videoId: "YOUTUBE_ID_502",
-  },
-  {
-    id: "render-3",
-    title: "Product Rendering Suite",
-    description:
-      "3D visuals for consumer electronics, appliances and industrial products.",
-    category: "product",
-    service: "3d-rendering-and-visualisation",
-    videoId: "YOUTUBE_ID_503",
-  },
+// ----------------------------------------
+// ⭐ 5️⃣ 3D RENDERING & VISUALIZATION – JEWELRY
+// ----------------------------------------
+
+{
+  id: "render-jewelry-1",
+  title: "Jewelry 3D Rendering – Diamond Ring",
+  description:
+    "High-quality photorealistic 3D jewelry rendering showcasing realistic materials, gemstone brilliance, studio lighting, and premium detailing for marketing and product visualization.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "0YYCDbodmzU",
+  stats: [
+    { label: "Render Quality", value: "Photorealistic" },
+    { label: "Output", value: "4K / 8K" }
+  ],
+},
+
+{
+  id: "render-jewelry-2",
+  title: "Jewelry 3D Rendering – Gold Band Ring",
+  description:
+    "Photorealistic 3D visualization of a gold band ring with accurate metal reflections, smooth surfaces, and luxury-grade lighting for digital showcases.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "4SqE0Ig90To",
+  stats: [
+    { label: "Lighting", value: "Studio Grade" },
+    { label: "Detailing", value: "Ultra-High" }
+  ],
+},
+
+{
+  id: "render-jewelry-3",
+  title: "Jewelry 3D Rendering – Halo Engagement Ring",
+  description:
+    "Luxury halo engagement ring rendered in high detail with realistic diamond dispersion, reflections, and premium presentation visuals.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "MBX2s_yPIKU",
+  stats: [
+    { label: "Gem Detail", value: "High Precision" },
+    { label: "Finish", value: "Luxury" }
+  ],
+},
+
+{
+  id: "render-jewelry-4",
+  title: "Jewelry 3D Rendering – Sapphire Ring",
+  description:
+    "High-end sapphire ring 3D rendering featuring gemstone clarity, realistic refraction, and elegant studio lighting for luxury branding.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "0aY1rIer9bw",
+  stats: [
+    { label: "Gemstone", value: "Photorealistic" },
+    { label: "Output", value: "4K+" }
+  ],
+},
+
+{
+  id: "render-jewelry-5",
+  title: "Jewelry 3D Rendering – Emerald Ring",
+  description:
+    "Premium emerald ring 3D visualization with accurate color depth, reflections, and refined material detailing.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "PZtbiS-28ro",
+  stats: [
+    { label: "Color Accuracy", value: "High" },
+    { label: "Visual Depth", value: "Enhanced" }
+  ],
+},
+
+{
+  id: "render-jewelry-6",
+  title: "Jewelry 3D Rendering – Luxury Bracelet",
+  description:
+    "Photorealistic 3D rendering of a luxury bracelet with precise metal finish, symmetry, and premium lighting setup.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "C4G-0mtKFjQ",
+  stats: [
+    { label: "Surface Finish", value: "Premium" },
+    { label: "Detail Level", value: "Ultra" }
+  ],
+},
+
+{
+  id: "render-jewelry-7",
+  title: "Jewelry 3D Rendering – Eternity Band",
+  description:
+    "Elegant eternity band 3D rendering with continuous gemstone detailing and refined lighting for ecommerce and catalogs.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "dzTrl8lVE7o",
+  stats: [
+    { label: "Consistency", value: "High Precision" },
+    { label: "Render Style", value: "Luxury" }
+  ],
+},
+
+{
+  id: "render-jewelry-8",
+  title: "Jewelry 3D Rendering – Wedding Ring Set",
+  description:
+    "Wedding ring set visualized in high-quality 3D with realistic metal textures and gemstone brilliance.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "jHZ-G1baokg",
+  stats: [
+    { label: "Pair Detailing", value: "Matched" },
+    { label: "Output", value: "High-Res" }
+  ],
+},
+
+{
+  id: "render-jewelry-9",
+  title: "Jewelry 3D Rendering – Designer Ring",
+  description:
+    "Designer ring 3D rendering focusing on unique form, craftsmanship, and premium visual presentation.",
+  category: "jewelry",
+  service: "3d-rendering-and-visualisation",
+  videoId: "MhFIdq_Cxyw",
+  stats: [
+    { label: "Design Accuracy", value: "High" },
+    { label: "Visual Style", value: "Premium" }
+  ],
+},
+
+
+
 
   // ----------------------------------------
   // ⭐ 6️⃣ MANUFACTURING SOLUTIONS
