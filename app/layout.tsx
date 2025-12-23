@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     'SiyaTechPlus delivers advanced RFID systems, ecommerce solutions, digital automation, and real-time tracking technologies to help businesses optimize operations and scale efficiently.',
   keywords:
     'RFID technology, ecommerce development, business automation, digital transformation, real-time tracking, inventory management, warehouse automation, CRM systems, branding solutions, SiyaTechPlus',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
   robots: {
     index: true,
     follow: true
