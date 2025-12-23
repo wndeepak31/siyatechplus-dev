@@ -95,7 +95,7 @@ export const projects: Project[] = [
   },
   {
     id: "rfid-3",
-    title: "Pocket RFID Device",
+    title: "GPS Tracking Machine",
     description:
       "A compact RFID handheld device designed for sales teams to scan assets, verify stock, and sync activity data in real-time for admin monitoring.",
     category: "manufacturing", // or "retail" or "manufacturing" — choose below!
@@ -120,6 +120,25 @@ export const projects: Project[] = [
       { label: "Items Detected", value: "Multiple at Once" }
     ],
     technologies: ["RFID Tray", "UHF Tags", "POS Integration", "Real-Time Sync"]
+  },
+  {
+    id: "rfid-5",
+    title: "RFID Security Gate Demo",
+    description:
+      "RFID security gate demo showcasing real-time theft detection at store exits with instant alerts and asset movement visibility.",
+    category: "retail",
+    service: "rfid-solutions",
+    videoId: "t3RYGOyJLP0",
+    stats: [
+      { label: "Theft Detection", value: "Instant" },
+      { label: "Exit Monitoring", value: "100% Coverage" }
+    ],
+    technologies: [
+      "RFID Security Gates",
+      "UHF RFID Tags",
+      "Real-Time Alerts",
+      "Store Analytics Dashboard"
+    ]
   },
 
   // ----------------------------------------
