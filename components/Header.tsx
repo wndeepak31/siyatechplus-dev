@@ -73,16 +73,17 @@ export default function Header() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 250, damping: 12 }}
           >
-          <Image
-            src="/assets/logo/siyatechplus-logo-1.png"
-            alt="SiyaTechPlus Logo"
-            width={140}
-            height={32}
-            priority
-            className="object-contain"
-            style={{ height: "32px", width: "auto" }}
-          />
-
+            <Link href="/" aria-label="Go to homepage">
+              <Image
+                src="/assets/logo/siyatechplus-logo-1.png"
+                alt="SiyaTechPlus Logo"
+                width={140}
+                height={32}
+                priority
+                className="object-contain"
+                style={{ height: "32px", width: "auto" }}
+              />
+            </Link>
           </motion.div>
 
           {/* Desktop Menu */}
